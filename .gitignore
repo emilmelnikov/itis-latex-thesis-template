@@ -1,0 +1,16 @@
+*.pdf
+!figures/*.pdf
+
+*.bib.bak
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.tes

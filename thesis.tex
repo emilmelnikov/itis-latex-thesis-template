@@ -1,0 +1,51 @@
+% Check for dangerous commands; this must go first.
+\RequirePackage[l2tabu,orthodox]{nag}
+% Change "draft" to "final" to get a clean document.
+\documentclass[final]{ruthesis}
+% Packages.
+\input{packages.tex}
+% Do not generate the document, do syntax check only.
+%\syntaxonly
+% Bibliography files.
+\addbibresource{references.bib}
+% Title page info.
+\input{titlepageinfo.tex}
+
+%% Custom commands and environments.
+
+\newcommand*{\en}{\textenglish}
+
+%% Document content.
+
+\begin{document}
+
+% Title page and TOC/LOF/LOT.
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Introduction.
+\include{chapters/introduction}
+
+% Main chapters.
+\include{chapters/literature_review}
+\include{chapters/theoretical_development}
+\include{chapters/specification}
+\include{chapters/implementation}
+\include{chapters/results}
+
+% Conclusion.
+\include{chapters/conclusion}
+
+% Bibliography.
+\printbibliography[heading=bibintoc]
+
+\begin{appendices}
+\renewcommand*{\thechapter}{\Asbuk{chapter}}
+% Appendices.
+\include{appendices/background_theory}
+\include{appendices/source_code_listings}
+\end{appendices}
+
+\end{document}
