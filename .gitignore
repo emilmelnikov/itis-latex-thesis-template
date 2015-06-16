@@ -1,5 +1,5 @@
 *.pdf
-!figures/*.pdf
+!*/figures/*.pdf
 
 *.bib.bak
 *.aux
