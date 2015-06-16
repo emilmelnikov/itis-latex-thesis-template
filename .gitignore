@@ -14,3 +14,6 @@
 *.synctex.gz
 *.toc
 *.tes
+*.nav
+*.snm
+
