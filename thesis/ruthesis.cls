@@ -98,12 +98,8 @@
 % Enchancements.
 \RequirePackage{microtype}
 \RequirePackage[strict=true]{csquotes}
-\widowpenalty=500  % Maximum is 10000.
-\clubpenalty=500  % Maximum is 10000.
-%\tolerance=10000  % Use "\emergencystretch" instead.
-\emergencystretch=3em
-\hfuzz=0.5pt
-\hbadness=10000
+\widowpenalty=10000
+\clubpenalty=10000
 
 % Bibliography and hyperlinks.
 \RequirePackage[backend=biber,sorting=none,style=gost-numeric]{biblatex}
