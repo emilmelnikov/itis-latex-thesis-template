@@ -105,6 +105,7 @@
 \RequirePackage[backend=biber,sorting=none,style=gost-numeric]{biblatex}
 \setlength{\bibitemsep}{0pt}
 \renewcommand*{\multicitedelim}{\addsemicolon\space}
+\RequirePackage{ragged2e}
 \RequirePackage{url}
 \RequirePackage[hidelinks]{hyperref}  % This must be loaded after all main packages.
 
